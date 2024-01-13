@@ -221,16 +221,16 @@ const FifthSection = () => {
     <>
       <MainFifthContainer>
         <div style={{ position: 'absolute', top: '-100%', right: '0' }} className="absolute top-[-100%] right-0">
-          <img src="Images/forthright.png" alt="img" />
+          <img src="images/forthright.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '2.5rem', left: '5rem' }} className="absolute top-10 left-20">
-          <img src="Images/forthtopleft.png" alt="img" />
+          <img src="images/forthtopleft.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '18rem', left: '30rem' }} className="absolute top-72 left-[30rem]">
-          <img src="Images/forthsecondbubble.png" alt="img" />
+          <img src="images/forthsecondbubble.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '25rem', left: '14rem' }} className="absolute top-[25rem] left-56">
-          <img src="Images/forthsecondbubble.png" alt="img" />
+          <img src="images/forthsecondbubble.png" alt="img" />
         </div>
         <MainFifthLeft>
           <MainHeadContainer>
@@ -266,17 +266,17 @@ const FifthSection = () => {
         <FifthRight>
           {/* <CoinMainContainer>
                         <LeftCoinConainer>
-                            <img src='Images/coinleftsm.png' ></img>
+                            <img src='images/coinleftsm.png' ></img>
                         </LeftCoinConainer>
                         <RightCoinContainer>
-                            <img src='Images/coinrightsm.png' ></img>
+                            <img src='images/coinrightsm.png' ></img>
                         </RightCoinContainer>
                        
                         <CoinShadow>
                         <CenterCoinContainer>
-                            <img src='Images/coincentercm.png' className=''></img>
+                            <img src='images/coincentercm.png' className=''></img>
                         </CenterCoinContainer>
-                            <img src='Images/coinshadowsm.png'></img>
+                            <img src='images/coinshadowsm.png'></img>
                         </CoinShadow>
 
                     </CoinMainContainer> */}

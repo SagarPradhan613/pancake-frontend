@@ -8,7 +8,7 @@ import { useAccount } from 'wagmi'
 const MainThirdContainer = styled.div`
   width: 100%;
   margin-top: 10rem;
-  background-image: url('/Images/tradebg.png');
+  background-image: url('/images/tradebg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ const ThirdSection = () => {
           </div>
         </ThirdLeft>
         <ThirdRight>
-          <img src="Images/traderight.png" alt="img" />
+          <img src="images/traderight.png" alt="img" />
         </ThirdRight>
       </MainThirdContainer>
     </>

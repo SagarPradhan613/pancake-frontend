@@ -107,7 +107,7 @@ const UserBox = styled.div`
   padding-bottom: 2.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  background-image: url('/Images/userbg.png');
+  background-image: url('/images/userbg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

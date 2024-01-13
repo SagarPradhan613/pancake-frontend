@@ -57,3 +57,5 @@ scripts/dev/**
 
 # typescript
 *.tsbuildinfo
+
+.vercel

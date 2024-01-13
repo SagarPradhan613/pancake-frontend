@@ -124,7 +124,7 @@ const SixthHeaderBlue = styled.div`
 `
 
 const CommunityFigureContainer = styled.div`
-  background-image: url('/Images/community-bg.png');
+  background-image: url('/images/community-bg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ const CommunityFigureContainer = styled.div`
 `
 
 const CommunityFigure = styled.div`
-  background-image: url('/Images/community-figure.png');
+  background-image: url('/images/community-figure.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -311,55 +311,55 @@ const CommunitySection = () => {
 
       <MainCommunity>
         <div style={{ position: 'absolute', top: '-100%', right: '0' }} className="absolute top-[-100%] right-0">
-          <img src="Images/sixthtop.png" alt="img" />
+          <img src="images/sixthtop.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '0', left: '0' }} className="absolute top-0 left-0">
-          <img src="Images/sixthleft.png" alt="img" />
+          <img src="images/sixthleft.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', bottom: '-100%', right: '0' }} className="absolute bottom-[-100%] right-0">
-          <img src="Images/fifthright.png" alt="img" />
+          <img src="images/fifthright.png" alt="img" />
         </div>
         <HideinMob
           style={{ position: 'absolute', top: '0', left: '-5%' }}
           className="absolute hidden lg:block top-0 left-[-5%]"
         >
-          <img src="Images/twittermask.png" alt="img" />
+          <img src="images/twittermask.png" alt="img" />
         </HideinMob>
         <HideinMob
           style={{ position: 'absolute', top: '-20%', left: '13rem' }}
           className="absolute hidden lg:block top-[-20%] left-52"
         >
-          <img src="Images/instamask.png" alt="img" />
+          <img src="images/instamask.png" alt="img" />
         </HideinMob>
         <div style={{ position: 'absolute', top: '-3%', left: '30%' }} className="absolute top-[-3%] left-[30%]">
-          <img src="Images/joinleftbubble.png" alt="img" />
+          <img src="images/joinleftbubble.png" alt="img" />
         </div>
         <HideinMob
           style={{ position: 'absolute', top: '-20%', left: '40rem' }}
           className="absolute hidden lg:block top-[-20%] left-[40rem]"
         >
-          <img src="Images/discordmask.png" alt="img" />
+          <img src="images/discordmask.png" alt="img" />
         </HideinMob>
         <HideinMob
           style={{ position: 'absolute', top: '-10%', left: '50rem' }}
           className="absolute hidden lg:block top-[-10%] left-[50rem]"
         >
-          <img src="Images/redditmask.png" alt="img" />
+          <img src="images/redditmask.png" alt="img" />
         </HideinMob>
         <div style={{ position: 'absolute', top: '-10%', left: '60rem' }} className="absolute  top-[-10%] left-[60rem]">
-          <img src="Images/jointopbubble.png" alt="img" />
+          <img src="images/jointopbubble.png" alt="img" />
         </div>
         <HideinMob
           style={{ position: 'absolute', top: '-10%', right: '-5%' }}
           className="absolute hidden lg:block top-[-10%] right-[-5%]"
         >
-          <img src="Images/youtubemask.png" alt="img" />
+          <img src="images/youtubemask.png" alt="img" />
         </HideinMob>
         <HideinMob
           style={{ position: 'absolute', top: '20rem', right: '0' }}
           className="absolute hidden lg:block top-80 right-0"
         >
-          <img src="Images/telemask.png" alt="img" />
+          <img src="images/telemask.png" alt="img" />
         </HideinMob>
 
         <SixthHeaderWhite>
@@ -384,38 +384,38 @@ const CommunitySection = () => {
           <CommunitySocialContainer>
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/twitter.png"
+              src="images/twitter.png"
               alt="img"
             />
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/tele.png"
+              src="images/tele.png"
               alt="img"
             />
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/tele.png"
+              src="images/tele.png"
               alt="img"
             />
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/discord.png"
+              src="images/discord.png"
               alt="img"
             />
 
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/insta.png"
+              src="images/insta.png"
               alt="img"
             />
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/youtube.png"
+              src="images/youtube.png"
               alt="img"
             />
             <img
               className="transition-transform duration-500 transform hover:scale-110"
-              src="Images/reddit.png"
+              src="images/reddit.png"
               alt="img"
             />
           </CommunitySocialContainer>

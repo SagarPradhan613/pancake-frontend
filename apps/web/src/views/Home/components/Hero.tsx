@@ -471,28 +471,28 @@ const Hero = () => {
 
       <MainContainer>
         <div style={{ position: 'absolute', top: '0', left: '0' }} className="absolute top-0 left-0">
-          <img className="" src="Images/maintopmask.png" alt="img" />
+          <img className="" src="images/maintopmask.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '0', left: '0' }} className="absolute top-0 left-0">
-          <img src="Images/maintopleft.png" alt="img" />
+          <img src="images/maintopleft.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '2.5rem', left: '2.5rem' }} className="absolute top-10 left-10">
-          <img src="Images/maincirclemask.png" alt="img" />
+          <img src="images/maincirclemask.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '24rem', left: '11rem' }} className="absolute top-96 left-44">
-          <img src="Images/mainbottomleft.png" alt="img" />
+          <img src="images/mainbottomleft.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '20rem', left: '40rem' }} className="absolute top-80 left-[40rem]">
-          <img src="Images/mainbottomright.png" alt="img" />
+          <img src="images/mainbottomright.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '10rem', right: '0' }} className="absolute top-40 right-0">
-          <img src="Images/mainrightmask.png" alt="img" />
+          <img src="images/mainrightmask.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '13rem', right: '0' }} className="absolute top-52 right-0">
-          <img src="Images/secondrighttop.png" alt="img" />
+          <img src="images/secondrighttop.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '18rem', left: '0' }} className="absolute top-72 left-0">
-          <img src="Images/secondleft.png" alt="img" />
+          <img src="images/secondleft.png" alt="img" />
         </div>
         <MainLeft>
           <Container>
@@ -520,7 +520,7 @@ const Hero = () => {
           </Container>
         </MainLeft>
         <MainRight>
-          <img src="Images/mainright.png" alt="img" />
+          <img src="images/mainright.png" alt="img" />
         </MainRight>
       </MainContainer>
     </>

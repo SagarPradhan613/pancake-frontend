@@ -78,6 +78,7 @@
     "@svgr/webpack": "^8.0.1",
     "crypto": "^1.0.1",
     "encoding": "^0.1.13",
+    "vercel": "^33.1.0",
     "ws": "^8.13.0"
   },
   "pnpm": {

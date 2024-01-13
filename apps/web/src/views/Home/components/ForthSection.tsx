@@ -180,26 +180,26 @@ const ForthSection = () => {
     <>
       <MainForthContainer>
         <div style={{ position: 'absolute', top: '-80%', left: '0' }} className="absolute top-[-80%] left-0">
-          <img src="Images/thirdlefttop.png" alt="img" />
+          <img src="images/thirdlefttop.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '8rem', right: '35rem' }} className="absolute top-32 right-[35rem]">
-          <img src="Images/thirdright.png" alt="img" />
+          <img src="images/thirdright.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '24rem', right: '25rem' }} className="absolute top-96 right-[25rem]">
-          <img src="Images/thirdrightbottom.png" alt="img" />
+          <img src="images/thirdrightbottom.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '20rem', right: '15rem' }} className="absolute top-80 right-[15rem]">
-          <img src="Images/thirdrighttop.png" alt="img" />
+          <img src="images/thirdrighttop.png" alt="img" />
         </div>
         <ForthLeft>
           <LeftImageContainer>
             <img
-              src="Images/wings.png"
+              src="images/wings.png"
               style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
               alt="img"
             />
-            <img src="Images/logo.png" style={{ width: '20%', marginTop: '45%' }} alt="img" />
-            <img src="Images/shadow.png" style={{ width: '25%', marginTop: '-5%' }} alt="img" />
+            <img src="images/logo.png" style={{ width: '20%', marginTop: '45%' }} alt="img" />
+            <img src="images/shadow.png" style={{ width: '25%', marginTop: '-5%' }} alt="img" />
           </LeftImageContainer>
           <div />
         </ForthLeft>

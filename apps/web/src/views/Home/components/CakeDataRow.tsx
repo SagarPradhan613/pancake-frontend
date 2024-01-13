@@ -136,7 +136,7 @@ const FigureBox = styled.div`
   align-items: center;
   flex-direction: column;
   height: 186px;
-  background-image: url('/Images/figureboxbg.png');
+  background-image: url('/images/figureboxbg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -224,16 +224,16 @@ const CakeDataRow = () => {
     <>
       <MainSixthContainer>
         <div style={{ position: 'absolute', top: '-100%', left: '0' }} className="absolute top-[-100%] left-0">
-          <img src="Images/fifthtopleft.png" alt="img" />
+          <img src="images/fifthtopleft.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '5%', left: '35%' }} className="absolute top-[-5%] left-[35%]">
-          <img src="Images/fifthtopleftbubble.png" alt="img" />
+          <img src="images/fifthtopleftbubble.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '5rem', left: '60%' }} className="absolute top-20 left-[60%]">
-          <img src="Images/fifthbottombubble.png" alt="img" />
+          <img src="images/fifthbottombubble.png" alt="img" />
         </div>
         <div style={{ position: 'absolute', top: '0', left: '70%' }} className="absolute top-0 left-[70%]">
-          <img src="Images/fifthrightbubble.png" alt="img" />
+          <img src="images/fifthrightbubble.png" alt="img" />
         </div>
         <SixthHeaderWhite>
           Hades <SixthHeaderBlue>Figures</SixthHeaderBlue>{' '}
