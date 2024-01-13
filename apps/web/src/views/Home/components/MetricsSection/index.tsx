@@ -1,10 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useQuery } from '@tanstack/react-query'
-import { ASSET_CDN } from 'config/constants/endpoints'
-import Image from 'next/legacy/image'
 import { styled } from 'styled-components'
-import { ChainTags } from './ChainTags'
 import { MetricsCard } from './MetricsCard'
 
 const ImageLayer = styled.div`
@@ -49,13 +46,15 @@ const AptosBallRocket = styled.div`
 `
 
 const SecondButton = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
 border-radius: 16px;
 font-size:30px;
 background-color: rgba(0, 210, 255, 0.15);
 padding-top:1.2rem;
 padding-bottom:1.2rem;
-padding-left:4rem;
-padding-right:4rem;
+
 position:relative;
 z-index-10;
 color:white;
@@ -68,6 +67,20 @@ margin-top:2rem;
   &:hover {
     transform: scale(1.1); /* Increase the scale factor as needed */
   }
+    @media only screen and (max-width: 767px) {
+      padding-left:3rem;
+      padding-right:3rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    padding-left:4rem;
+    padding-right:4rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    padding-left:4rem;
+    padding-right:4rem;
+  }
 `
 
 const UserBoxContainer = styled.div`
@@ -76,24 +89,26 @@ const UserBoxContainer = styled.div`
   justify-content: center;
   width: 100%;
   gap: 2.5rem;
-  margin-top: 7rem;
 
   @media only screen and (max-width: 767px) {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex-direction: column;
+    margin-top: 6rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     flex-direction: column;
+    margin-top: 7rem;
   }
 
   @media only screen and (min-width: 1080px) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     flex-direction: row;
+    margin-top: 7rem;
   }
 `
 
@@ -103,7 +118,12 @@ const UserBox = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 2.5rem;
-  min-width: 370px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
   padding-bottom: 2.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -113,6 +133,18 @@ const UserBox = styled.div`
   background-repeat: no-repeat;
   background-color: rgba(0, 210, 255, 0.15);
   border-radius: 30px;
+
+  @media only screen and (max-width: 767px) {
+    min-width: 300px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    min-width: 370px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    min-width: 370px;
+  }
 `
 
 const UserProfile = styled.div`
@@ -132,23 +164,26 @@ const MainSecondContainer = styled.div`
   background-color: #022830;
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
+
   align-items: Center;
   flex-direction: column;
   z-index: 0;
   @media only screen and (max-width: 767px) {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 6rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 8rem;
   }
 
   @media only screen and (min-width: 1080px) {
     padding-left: 5rem;
     padding-right: 5rem;
+    margin-top: 8rem;
   }
 `
 const MainHeadContainer = styled.div`

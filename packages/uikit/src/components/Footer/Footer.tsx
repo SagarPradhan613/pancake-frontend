@@ -1,24 +1,16 @@
 import { useIsMounted } from "@pancakeswap/hooks";
 import React from "react";
-import { fontWeight } from "styled-system";
 import styled from "styled-components";
 import { useMatchBreakpoints } from "../../contexts";
 import { Box, Flex } from "../Box";
 import { Link } from "../Link";
-import {
-  StyledFooter,
-  StyledIconMobileContainer,
-  StyledList,
-  StyledListItem,
-  StyledText,
-  StyledToolsContainer,
-} from "./styles";
+import { StyledFooter, StyledList, StyledListItem, StyledText, StyledToolsContainer } from "./styles";
 
 import { vars } from "../../css/vars.css";
 import { Button } from "../Button";
 import CakePrice from "../CakePrice/CakePrice";
 import LangSelector from "../LangSelector/LangSelector";
-import { ArrowForwardIcon, LogoWithTextIcon } from "../Svg";
+import { ArrowForwardIcon } from "../Svg";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { FooterProps } from "./types";
 
@@ -62,6 +54,10 @@ const FooterFirstContainer = styled.div`
 
 const FooterLogoContainer = styled.div`
   @media only screen and (max-width: 767px) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
@@ -135,7 +131,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
           >
             <FooterFirstContainer>
               <FooterLogoContainer>
-                <img src="Images/footerlogo.png" style={{ height: "100%", width: "100%" }} alt="img" />
+                <img src="images/footerlogo.png" style={{ height: "100%", width: "100%" }} alt="img" />
               </FooterLogoContainer>
               <FooterLeftPara>
                 Lorem ipsum is a placeholder text commonly to the visual form of a document or a typeface. Lorem ipsum

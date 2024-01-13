@@ -212,6 +212,20 @@ const MainHeadContainer = styled.div`
     line-height: 4rem;
   }
 `
+const HideinMob = styled.div`
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    display: block;
+  }
+`
+
 const FifthSection = () => {
   const { t } = useTranslation()
   const { address: account } = useAccount()
@@ -223,9 +237,12 @@ const FifthSection = () => {
         <div style={{ position: 'absolute', top: '-100%', right: '0' }} className="absolute top-[-100%] right-0">
           <img src="images/forthright.png" alt="img" />
         </div>
-        <div style={{ position: 'absolute', top: '2.5rem', left: '5rem' }} className="absolute top-10 left-20">
-          <img src="images/forthtopleft.png" alt="img" />
-        </div>
+        <HideinMob>
+          <div style={{ position: 'absolute', top: '2.5rem', left: '5rem' }} className="absolute top-10 left-20">
+            <img src="images/forthtopleft.png" alt="img" />
+          </div>
+        </HideinMob>
+
         <div style={{ position: 'absolute', top: '18rem', left: '30rem' }} className="absolute top-72 left-[30rem]">
           <img src="images/forthsecondbubble.png" alt="img" />
         </div>

@@ -70,22 +70,26 @@ const MainCommunity = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 18rem;
-  margin-bottom: 25rem;
 
   @media only screen and (max-width: 767px) {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 18rem;
+    margin-bottom: 25rem;
   }
 
   @media only screen and (min-width: 1080px) {
     padding-left: 5rem;
     padding-right: 5rem;
+    margin-top: 18rem;
+    margin-bottom: 25rem;
   }
 `
 
@@ -421,7 +425,7 @@ const CommunitySection = () => {
           </CommunitySocialContainer>
 
           <CommunityTextContainer>
-            <p>Join the hades community and become a part of hades army!</p>
+            <p style={{ textAlign: 'center' }}>Join the hades community and become a part of hades army!</p>
           </CommunityTextContainer>
         </CommunityFigureContainer>
       </MainCommunity>

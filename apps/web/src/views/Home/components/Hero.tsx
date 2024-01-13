@@ -193,7 +193,9 @@ const MainRight = styled.div`
   }
 `
 
-const Container = styled.div``
+const Container = styled.div`
+  position: relative;
+`
 const FirstLine = styled.p`
   color: #d9d9d9;
   font-weight: 700;
@@ -279,6 +281,20 @@ const MainPara = styled.div`
 const ButtonContainer = styled.div`
   display: flex;
   margin-top: 2.5rem;
+`
+
+const HideinMob = styled.div`
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    display: block;
+  }
 `
 
 const Hero = () => {
@@ -476,9 +492,12 @@ const Hero = () => {
         <div style={{ position: 'absolute', top: '0', left: '0' }} className="absolute top-0 left-0">
           <img src="images/maintopleft.png" alt="img" />
         </div>
-        <div style={{ position: 'absolute', top: '2.5rem', left: '2.5rem' }} className="absolute top-10 left-10">
-          <img src="images/maincirclemask.png" alt="img" />
-        </div>
+        <HideinMob>
+          <div style={{ position: 'absolute', top: '2.5rem', left: '2.5rem' }} className="absolute top-10 left-10">
+            <img src="images/maincirclemask.png" alt="img" />
+          </div>
+        </HideinMob>
+
         <div style={{ position: 'absolute', top: '24rem', left: '11rem' }} className="absolute top-96 left-44">
           <img src="images/mainbottomleft.png" alt="img" />
         </div>
@@ -520,7 +539,7 @@ const Hero = () => {
           </Container>
         </MainLeft>
         <MainRight>
-          <img src="images/mainright.png" alt="img" />
+          <img style={{ position: 'relative' }} src="images/mainright.png" alt="img" />
         </MainRight>
       </MainContainer>
     </>

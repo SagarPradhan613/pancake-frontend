@@ -62,6 +62,18 @@ const LeftImageContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media only screen and (max-width: 767px) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    width: 100%;
+  }
 `
 const ForthRight = styled.div`
   @media only screen and (max-width: 767px) {

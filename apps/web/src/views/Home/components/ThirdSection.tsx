@@ -7,7 +7,7 @@ import { useAccount } from 'wagmi'
 
 const MainThirdContainer = styled.div`
   width: 100%;
-  margin-top: 10rem;
+
   background-image: url('/images/tradebg.png');
   background-size: cover;
   background-position: center center;
@@ -15,17 +15,19 @@ const MainThirdContainer = styled.div`
   background-color: rgba(0, 210, 255, 0.15);
 
   @media only screen and (max-width: 767px) {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    margin-top: 6rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    margin-top: 10rem;
   }
 
   @media only screen and (min-width: 1080px) {
@@ -34,6 +36,7 @@ const MainThirdContainer = styled.div`
     display: flex;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    margin-top: 10rem;
   }
 `
 
