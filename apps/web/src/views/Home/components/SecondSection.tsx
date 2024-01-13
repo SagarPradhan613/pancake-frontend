@@ -35,18 +35,19 @@ const FirstLine = styled.p`
   opacity: 0.5;
 `
 const SecondLineCont = styled.div`
-    position:relative;
-    border-left:0;
-    border-rightL0;
-    width:100%;
-    color:white;
-    margin-top:10px;
-    margin-bottom:10px;
-    rotate:-3deg;
-    padding-top:1.3rem;
-    padding-bottom:1.3rem;
-    border:1px solid white;
-background: linear-gradient(to right, #1e4144, #216d74);
+  position: relative;
+  border-left: 0;
+  border-right: 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 100%;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  rotate: -3deg;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background: linear-gradient(to right, #1e4144, #216d74);
 `
 
 const LeftAnimation = styled.div`
