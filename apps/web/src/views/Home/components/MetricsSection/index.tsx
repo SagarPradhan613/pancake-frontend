@@ -118,11 +118,6 @@ const UserBox = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 2.5rem;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 
   padding-bottom: 2.5rem;
   padding-left: 3rem;
