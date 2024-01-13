@@ -1,5 +1,5 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Button, Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { Button, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
 import ConnectWalletButton from 'components/ConnectWalletButton'
@@ -11,7 +11,6 @@ import { useAccount } from 'wagmi'
 import { useDrawCanvas } from '../hooks/useDrawCanvas'
 import { useDrawSequenceImages } from '../hooks/useDrawSequence'
 import { checkIsIOS, useIsIOS } from '../hooks/useIsIOS'
-import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
 const BgWrapper = styled.div`
   z-index: -1;
@@ -113,6 +112,175 @@ const StyledText = styled(Text)`
 const width = 1080
 const height = 1080
 
+const MainContainer = styled.div`
+  background-color: #022830;
+  position: relative;
+
+  @media only screen and (max-width: 767px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+  }
+`
+
+const MainLeft = styled.div`
+  display: flex;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+`
+
+const MainRight = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+`
+
+const Container = styled.div``
+const FirstLine = styled.p`
+  color: #d9d9d9;
+  font-weight: 700;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 2.25rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    font-size: 2.25rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 4.5rem;
+  }
+`
+
+const SecondLineContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+const SecondLine = styled.p`
+  color: #d9d9d9;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 2.25rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    font-size: 2.25rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 4.5rem;
+  }
+`
+
+const SecondHighlight = styled.p`
+  color: #00d2ff;
+  white-space: nowrap;
+  line-height: 1;
+  margin-left: 1rem;
+  font-weight: 700;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 8rem;
+  }
+`
+const MainPara = styled.div`
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  @media only screen and (max-width: 767px) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+`
+
+const ButtonContainer = styled.div`
+  display: flex;
+  margin-top: 2.5rem;
+`
+
 const Hero = () => {
   const { t } = useTranslation()
   const { address: account } = useAccount()
@@ -200,7 +368,7 @@ const Hero = () => {
           }
         `}
       </style>
-      <BgWrapper>
+      {/* <BgWrapper>
         <InnerWrapper>
           <SlideSvgDark className="slide-svg-dark" width="100%" />
           <SlideSvgLight className="slide-svg-light" width="100%" />
@@ -299,7 +467,62 @@ const Hero = () => {
             </CakeBox>
           </BunnyWrapper>
         </Flex>
-      </Flex>
+      </Flex> */}
+
+      <MainContainer>
+        <div style={{ position: 'absolute', top: '0', left: '0' }} className="absolute top-0 left-0">
+          <img className="" src="Images/maintopmask.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '0', left: '0' }} className="absolute top-0 left-0">
+          <img src="Images/maintopleft.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '2.5rem', left: '2.5rem' }} className="absolute top-10 left-10">
+          <img src="Images/maincirclemask.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '24rem', left: '11rem' }} className="absolute top-96 left-44">
+          <img src="Images/mainbottomleft.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '20rem', left: '40rem' }} className="absolute top-80 left-[40rem]">
+          <img src="Images/mainbottomright.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '10rem', right: '0' }} className="absolute top-40 right-0">
+          <img src="Images/mainrightmask.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '13rem', right: '0' }} className="absolute top-52 right-0">
+          <img src="Images/secondrighttop.png" alt="img" />
+        </div>
+        <div style={{ position: 'absolute', top: '18rem', left: '0' }} className="absolute top-72 left-0">
+          <img src="Images/secondleft.png" alt="img" />
+        </div>
+        <MainLeft>
+          <Container>
+            <FirstLine>The moon is</FirstLine>
+            <SecondLineContainer>
+              <SecondLine>Made of</SecondLine>
+              <SecondHighlight>Hades</SecondHighlight>
+            </SecondLineContainer>
+            <MainPara>
+              Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
+              typeface.
+            </MainPara>
+            <ButtonContainer>
+              {!account && <ConnectWalletButton style={{ borderRadius: isXs ? 12 : undefined }} scale="md" mr="15px" />}
+              <NextLinkFromReactRouter to="/swap">
+                <Button
+                  scale="md"
+                  style={{ borderRadius: isXs ? 12 : undefined }}
+                  variant={!account ? 'secondary' : 'primary'}
+                >
+                  {t('Trade Now')}
+                </Button>
+              </NextLinkFromReactRouter>
+            </ButtonContainer>
+          </Container>
+        </MainLeft>
+        <MainRight>
+          <img src="Images/mainright.png" alt="img" />
+        </MainRight>
+      </MainContainer>
     </>
   )
 }

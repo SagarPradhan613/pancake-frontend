@@ -39,10 +39,16 @@ class MyDocument extends Document {
           )}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link rel="preconnect" href={FARMS_API} />
-          <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&amp;display=swap" rel="stylesheet" />
+          {/* <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&amp;display=swap" rel="stylesheet" /> */}
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/logo.png" />
           <link rel="manifest" href="/manifest.json" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <noscript>

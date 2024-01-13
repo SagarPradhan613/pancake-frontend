@@ -1,5 +1,5 @@
-import { styled, DefaultTheme, css } from "styled-components";
-import { space, layout, variant } from "styled-system";
+import { DefaultTheme, css, styled } from "styled-components";
+import { layout, space, variant } from "styled-system";
 import { scaleVariants, styleVariants } from "./theme";
 import { BaseButtonProps } from "./types";
 
@@ -61,7 +61,11 @@ const StyledButton = styled("button").withConfig({
   line-height: 1;
   opacity: ${getOpacity};
   outline: 0;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1); /* Increase the scale factor as needed */
+  }
 
   &:focus-visible {
     outline: none;

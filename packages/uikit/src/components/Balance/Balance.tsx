@@ -1,6 +1,28 @@
 import { useMemo } from "react";
 import CountUp from "react-countup";
+import { styled } from "styled-components";
 import { Text, TextProps } from "../Text";
+
+const BalanceHead = styled.div`
+  color: #fff;
+  font-family: Raleway;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 46px */
+
+  @media only screen and (max-width: 767px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 40px;
+  }
+`;
 
 export interface BalanceProps extends TextProps {
   value: number;
@@ -43,8 +65,9 @@ const Balance: React.FC<React.PropsWithChildren<BalanceProps>> = ({
     >
       {({ countUpRef }) => (
         <Text
-          color={isDisabled ? "textDisabled" : color}
-          style={strikeThrough ? { textDecoration: "line-through" } : undefined}
+          style={{ color: "white", fontSize: "40px" }}
+          // color={isDisabled ? "textDisabled" : color}
+          // style={strikeThrough ? { textDecoration: "line-through" } : undefined}
           onClick={onClick}
           {...props}
         >
